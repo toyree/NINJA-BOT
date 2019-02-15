@@ -591,51 +591,9 @@ if(!is_null($events)){
                             break;
                     }
                     break;
-
-                /*
-                case "move":
-                    switch ($mid) {
-                     case "arm":
-                       $textReplyMessage = "ปราจีน บุเรี่ยน";
-                       $replyData = new TextMessageBuilder($textReplyMessage);
-                       break;
-                     case "toy":
-                       $textReplyMessage = "อยู่ในเมือง อันแสนโหดร้าย";
-                       $replyData = new TextMessageBuilder($textReplyMessage);
-                       break;
-                      case "tong":
-                       $textReplyMessage = "ติดเมียน้อย อยู่";
-                       $replyData = new TextMessageBuilder($textReplyMessage);
-                       break;
-                      case "pum":
-                       $textReplyMessage = "กลัวเมีย";
-                       $replyData = new TextMessageBuilder($textReplyMessage);
-                       break;
-                     case "test":
-                       $textReplyMessage = "ทดสอบ ทดสอบ และ ทดสอบ";
-                       $replyData = new TextMessageBuilder($textReplyMessage);
-                       break;
-                     case "":
-                       $textReplyMessage = "กรุณาพิมพ์ move-<ชื่อ> เพื่อสอบถามข้อมูลที่อยู่";
-                       $replyData = new TextMessageBuilder($textReplyMessage);
-                       break;
-                     default:
-                       $textReplyMessage = " ไม่พบข้อมูล ";
-                       $replyData = new TextMessageBuilder($textReplyMessage);
-                       break;    
-                    }
-                break;
-
-                
-
-                case "s":
-                    $stickerID = 22;
-                    $packageID = 2;
-                    $replyData = new StickerMessageBuilder($packageID,$stickerID);
-                    break;
-
+              
                 case "im":
-                    $imageMapUrl = 'https://www.mywebsite.com/imgsrc/photos/w/sampleimagemap';
+                    $imageMapUrl = 'imagemap.jpg';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'This is Title',
@@ -646,7 +604,7 @@ if(!is_null($events)){
                                 new AreaBuilder(0,0,520,699)
                                 ),
                             new ImagemapUriActionBuilder(
-                                'http://www.ninenik.com',
+                                'http://www.google.co.th',
                                 new AreaBuilder(520,0,520,699)
                                 )
                         )); 
@@ -668,7 +626,7 @@ if(!is_null($events)){
                         )
                     );
                     break; 
-                    */
+                    
                 case "bt":
                     $replyData = new TemplateMessageBuilder('Confirm button Template',
                         new ButtonTemplateBuilder(
