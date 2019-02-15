@@ -593,7 +593,7 @@ if(!is_null($events)){
                     break;
               
                 case "im":
-                    $imageMapUrl = 'imagemap.jpg';
+                    $imageMapUrl = 'https://ninja-bot-by-toy.herokuapp.com/imagemap.jpg';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'This is Title',
